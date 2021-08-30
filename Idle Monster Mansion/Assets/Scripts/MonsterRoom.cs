@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class MonsterRoom : MonoBehaviour
 {
+    public int id;
+    
     public string monsterName;
+    public int moneyInBank;
     
     public int incomeLevel = 0;
     public int bankLevel = 0;
@@ -23,6 +26,8 @@ public class MonsterRoom : MonoBehaviour
     public int currentBankSize;
     public int currentBankCost;
 
+    private float _nextTimeForIncome = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,12 +37,29 @@ public class MonsterRoom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GenerateMoney();
     }
 
     private void GenerateMoney()
     {
-        
+        if (incomeLevel > 0 && bankLevel > 0)
+        {
+            if (Time.time >= _nextTimeForIncome)
+            {
+                _nextTimeForIncome = Time.time + 1f;
+
+                if (moneyInBank >= currentBankSize)
+                    return;
+
+                var bankSizeLeft = currentBankSize - moneyInBank;
+                if (bankSizeLeft >= currentIncomeRate)
+                {
+                    moneyInBank += currentIncomeRate;
+                    return;
+                }
+                moneyInBank = currentBankSize;
+            }
+        }
     }
 
     private void GetStoredMoney()
