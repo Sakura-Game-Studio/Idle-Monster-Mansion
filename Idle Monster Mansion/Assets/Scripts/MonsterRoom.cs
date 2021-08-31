@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MonsterRoom : MonoBehaviour
 {
@@ -28,16 +30,34 @@ public class MonsterRoom : MonoBehaviour
 
     private float _nextTimeForIncome = 0f;
 
+    [SerializeField] private TextMeshProUGUI incomeRateUpgradeText;
+    [SerializeField] private TextMeshProUGUI incomeRateUpgradeCost;
+    [SerializeField] private TextMeshProUGUI bankSizeUpgradeText;
+    [SerializeField] private TextMeshProUGUI bankSizeUpgradeCost;
+    [SerializeField] private TextMeshProUGUI moneyInStorageText;
+    
     // Start is called before the first frame update
     void Start()
     {
         
+        UpdateCanvasUI();
     }
 
     // Update is called once per frame
     void Update()
     {
         GenerateMoney();
+    }
+
+    private void UpdateCanvasUI()
+    {
+        moneyInStorageText.text = "" + moneyInBank + "/" + currentBankSize;
+        
+        incomeRateUpgradeCost.text = "" + currentIncomeCost;
+        incomeRateUpgradeText.text = currentIncomeRate + "/s -> " + GetNextIncomeRate() + "/s";
+
+        bankSizeUpgradeCost.text = "" + currentBankCost;
+        bankSizeUpgradeText.text = currentBankSize + " -> " + GetNextBankSize();
     }
 
     private void GenerateMoney()
@@ -53,33 +73,54 @@ public class MonsterRoom : MonoBehaviour
 
                 var bankSizeLeft = currentBankSize - moneyInBank;
                 if (bankSizeLeft >= currentIncomeRate)
-                {
                     moneyInBank += currentIncomeRate;
-                    return;
-                }
-                moneyInBank = currentBankSize;
+                else
+                    moneyInBank = currentBankSize;
+                moneyInStorageText.text = "" + moneyInBank + "/" + currentBankSize;
             }
         }
     }
 
-    private void GetStoredMoney()
+    public void GetStoredMoney()
     {
-        
+        CurrencyManager.current.AddSoftCurrency(moneyInBank);
+        moneyInBank = 0;
+        moneyInStorageText.text = "" + moneyInBank;
     }
 
-    private void UpgradeIncome()
+    public void UnlockRoom()
     {
-        incomeLevel += 1;
-        currentIncomeCost = UpgradeCost(incomeLevel, baseIncomeCost, incomeCostMultiplier);
-        UpdateIncomeRate();
+        UpgradeBank();
+        UpgradeIncome();
     }
 
-    private void UpgradeBank()
+    public void UpgradeIncome()
     {
-        bankLevel += 1;
-        currentBankCost = UpgradeCost(bankLevel, baseBankCost, bankCostMultiplier);
-        UpdateBankSize();
+        if (CurrencyManager.current.HasMoney(currentIncomeCost))
+        {
+            CurrencyManager.current.AddSoftCurrency(-currentIncomeCost);
+            incomeLevel += 1;
+            currentIncomeCost = UpgradeCost(incomeLevel, baseIncomeCost, incomeCostMultiplier);
+            UpdateIncomeRate();
+            incomeRateUpgradeCost.text = "" + currentIncomeCost;
+            incomeRateUpgradeText.text = currentIncomeRate + "/s -> " + GetNextIncomeRate() + "/s";
+        }
     }
+
+    public void UpgradeBank()
+    {
+        if (CurrencyManager.current.HasMoney(currentBankCost))
+        {
+            CurrencyManager.current.AddSoftCurrency(-currentBankCost);
+            bankLevel += 1;
+            currentBankCost = UpgradeCost(bankLevel, baseBankCost, bankCostMultiplier);
+            UpdateBankSize();
+            bankSizeUpgradeCost.text = "" + currentBankCost;
+            bankSizeUpgradeText.text = currentBankSize + " -> " + GetNextBankSize();
+        }
+    }
+    
+    
 
     private int UpgradeCost(int level, int baseCost, float multiplier)
     {
@@ -94,6 +135,16 @@ public class MonsterRoom : MonoBehaviour
     private void UpdateBankSize()
     {
         currentBankSize = baseBankSize * bankLevel;
+    }
+
+    private int GetNextIncomeRate()
+    {
+        return baseIncomeRate * (incomeLevel + 1);
+    }
+
+    private int GetNextBankSize()
+    {
+        return baseBankSize * (bankLevel + 1);
     }
     
 }
