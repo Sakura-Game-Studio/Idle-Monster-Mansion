@@ -4,15 +4,60 @@ using UnityEngine;
 
 public class Tab : MonoBehaviour
 {
+    private bool isOpen = false;
+
+    private RectTransform rectTransform;
+
+    [SerializeField] private Vector2 openPos;
+    [SerializeField] private Vector2 closedPos;
+    private float timeOfTravel = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rectTransform = GetComponent<RectTransform>();
+        CloseTab();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToggleTab()
     {
-        
+        Debug.Log("Toggle Tab");
+        if (isOpen)
+            CloseTab();
+        else
+            OpenTab();
+    }
+
+    private void OpenTab()
+    {
+        Debug.Log("Opening Tab");
+        isOpen = true;
+        rectTransform.anchoredPosition = Vector2.Lerp(closedPos, openPos, 1f);
+        //LerpObject(closedPos, openPos);
+    }
+
+    IEnumerator LerpObject(Vector2 startPos, Vector2 endPos)
+    {
+        Debug.Log("Start Lerp");
+        float currentTime = 0;
+        float normalizedValue;
+        while (currentTime <= timeOfTravel)
+        {
+            currentTime += Time.deltaTime;
+            normalizedValue = currentTime / timeOfTravel;
+            
+            rectTransform.anchoredPosition = Vector2.Lerp(startPos, endPos, normalizedValue);
+
+            yield return null;
+        }
+        Debug.Log("End Lerp");
+    }
+
+    private void CloseTab()
+    {
+        Debug.Log("Closing Tab");
+        isOpen = false;
+        rectTransform.anchoredPosition = Vector2.Lerp(openPos, closedPos, 1f);
+        //LerpObject(openPos, closedPos);
     }
 }
