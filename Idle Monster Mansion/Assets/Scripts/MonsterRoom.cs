@@ -83,9 +83,10 @@ public class MonsterRoom : MonoBehaviour
 
     public void GetStoredMoney()
     {
+        Debug.Log("Getting Money");
         CurrencyManager.current.AddSoftCurrency(moneyInBank);
         moneyInBank = 0;
-        moneyInStorageText.text = "" + moneyInBank;
+        moneyInStorageText.text = "" + moneyInBank + "/" + currentBankSize;
     }
 
     public void UnlockRoom()
