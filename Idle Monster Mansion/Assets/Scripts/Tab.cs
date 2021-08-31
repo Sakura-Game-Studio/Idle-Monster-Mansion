@@ -21,7 +21,6 @@ public class Tab : MonoBehaviour
 
     public void ToggleTab()
     {
-        Debug.Log("Toggle Tab");
         if (isOpen)
             CloseTab();
         else
@@ -30,10 +29,9 @@ public class Tab : MonoBehaviour
 
     private void OpenTab()
     {
-        Debug.Log("Opening Tab");
         isOpen = true;
-        rectTransform.anchoredPosition = Vector2.Lerp(closedPos, openPos, 1f);
-        //LerpObject(closedPos, openPos);
+        //rectTransform.anchoredPosition = Vector2.Lerp(closedPos, openPos, 500f);
+        StartCoroutine(LerpObject(closedPos, openPos));
     }
 
     IEnumerator LerpObject(Vector2 startPos, Vector2 endPos)
@@ -55,9 +53,8 @@ public class Tab : MonoBehaviour
 
     private void CloseTab()
     {
-        Debug.Log("Closing Tab");
         isOpen = false;
-        rectTransform.anchoredPosition = Vector2.Lerp(openPos, closedPos, 1f);
-        //LerpObject(openPos, closedPos);
+        //rectTransform.anchoredPosition = Vector2.Lerp(openPos, closedPos, 500f);
+        StartCoroutine(LerpObject(openPos, closedPos));
     }
 }
