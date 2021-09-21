@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="DAWProject" id="{c77400b1-af9e-450d-9891-ee2010b351b3}">
+		<property name="assetPath">
+			<value>Clicker.rpp.link/</value>
+		</property>
+		<property name="dawProjectPath">
+			<value>../Clicker.rpp</value>
+		</property>
+		<property name="renderedAssetsPath">
+			<value>Render(feitos)</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{82c37c8e-5522-4b7e-8129-d9e491483f8a}</destination>
+		</relationship>
+	</object>
+</objects>

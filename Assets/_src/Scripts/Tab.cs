@@ -21,6 +21,7 @@ public class Tab : MonoBehaviour
 
     public void ToggleTab()
     {
+        SendMessage("Play");
         if (isOpen)
             CloseTab();
         else

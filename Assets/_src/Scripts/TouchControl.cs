@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class TouchControl : MonoBehaviour {
     private Vector3 touchStart;
@@ -15,20 +17,36 @@ public class TouchControl : MonoBehaviour {
 
     public SpriteRenderer area;
 
+    public GraphicRaycaster graphicRaycaster;
+    public EventSystem eventSystem;
+    private PointerEventData pointerData;
+
     private void Awake() {
         areaMinX = area.transform.position.x - area.bounds.size.x / 2f;
         areaMaxX = area.transform.position.x + area.bounds.size.x / 2f;
         
         areaMinY = area.transform.position.y - area.bounds.size.y / 2f;
         areaMaxY = area.transform.position.y + area.bounds.size.y / 2f;
+
+        pointerData = new PointerEventData(null);
     }
 
     void Update() {
 
         if(Input.GetMouseButtonDown(0)){
+            SendMessage("Play");
+
+            if (ClickOnUI()) {
+                return;
+            }
+
             touchStart = cam.ScreenToWorldPoint(Input.mousePosition);
         }
         if(Input.touchCount == 2){
+            if (ClickOnUI()) {
+                return;
+            }
+            
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
 
@@ -42,6 +60,10 @@ public class TouchControl : MonoBehaviour {
 
             zoom(difference * 0.01f);
         }else if(Input.GetMouseButton(0)){
+            if (ClickOnUI()) {
+                return;
+            }
+            
             Vector3 direction = touchStart - cam.ScreenToWorldPoint(Input.mousePosition);
             cam.transform.position += direction;
         }
@@ -66,6 +88,18 @@ public class TouchControl : MonoBehaviour {
         float newY = Mathf.Clamp(targetPosition.y, minY, maxY);
 
         return new Vector3(newX, newY, targetPosition.z);
+    }
+
+    private bool ClickOnUI() {
+        pointerData.position = Input.mousePosition;
+        List<RaycastResult> results = new List<RaycastResult>();
+        graphicRaycaster.Raycast(pointerData, results);
+
+        if (results.Count > 0) {
+            return true;
+        }
+
+        return false;
     }
 
 }
