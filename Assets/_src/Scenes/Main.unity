@@ -470,7 +470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 469.9, y: -204.69997}
+  m_AnchoredPosition: {x: 469.9, y: -204.6999}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373126154
@@ -2071,8 +2071,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 544675021}
   m_HandleRect: {fileID: 544675020}
   m_Direction: 3
-  m_Value: -0.00000032938564
-  m_Size: 0.49999997
+  m_Value: -0.00000032938553
+  m_Size: 0.76243585
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2552,7 +2552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4016845328392134641, guid: 5e2aa2671e968294bb9eef8f04bc6895, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4016845328392134641, guid: 5e2aa2671e968294bb9eef8f04bc6895, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2606,6 +2606,10 @@ PrefabInstance:
       propertyPath: incomeRateUpgradeText
       value: 
       objectReference: {fileID: 1492883951}
+    - target: {fileID: 6521365889439598580, guid: 5e2aa2671e968294bb9eef8f04bc6895, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e2aa2671e968294bb9eef8f04bc6895, type: 3}
 --- !u!114 &1849158556 stripped
