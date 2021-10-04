@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3445412c3ff43fd4999e4142e4cee93d, type: 3}
   m_Name: 01_Zombie
   m_EditorClassIdentifier: 
-  monsterName: 
+  monsterName: Zombie
   costToUnlock: 0
-  baseIncomeCost: 0
-  baseIncome: 0
-  baseCompletionTime: 0
-  initialCapacity: 0
-  baseCapacityCost: 0
+  locked: 0
+  level: 1
+  baseCost: 5
+  baseIncomeRate: 1
+  incomeCostMultiplier: 1.1
+  baseCompletionTime: 5
+  completionTimeMultiplier: 40
+  currentIncomeCost: 0
+  currentIncomeRate: 0
+  currentCompletionTime: 0

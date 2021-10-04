@@ -20,7 +20,7 @@ public class MonsterRoomManager : MonoBehaviour
 
     public void GenerateMoney(MonsterRoom room)
     {
-        CurrencyManager.current.TotalSoftCurrency += room.currentIncomeRate;
+        CurrencyManager.current.TotalSoftCurrency += room.getCurrentIncomeRate();
     }
 
     // Start is called before the first frame update

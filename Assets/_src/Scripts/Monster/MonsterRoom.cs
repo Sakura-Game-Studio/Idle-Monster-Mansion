@@ -8,67 +8,61 @@ public class MonsterRoom : MonoBehaviour
 
     [SerializeField] private DesignerMonsterRoom _roomStats;
 
-    public int incomeLevel = 0;
-
-    public int baseIncomeCost;
-    public int baseIncomeRate;
-
-    public float incomeCostMultiplier;
-
-    public int currentIncomeRate;
-    public int currentIncomeCost;
-
     [SerializeField] private TextMeshProUGUI incomeRateUpgradeText;
     [SerializeField] private TextMeshProUGUI incomeRateUpgradeCost;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Start() {
+        UpgradeCost();
+        UpdateIncomeRate();
     }
 
     public void GenerateMoney()
     {
-        
+        CurrencyManager.current.TotalSoftCurrency += getCurrentIncomeRate();
     }
 
     public void UnlockRoom()
     {
-        UpgradeIncome();
+        if (CurrencyManager.current.HasMoney(_roomStats.costToUnlock)) {
+            CurrencyManager.current.AddSoftCurrency(-_roomStats.costToUnlock);
+            _roomStats.locked = false;
+        }
     }
 
     public void UpgradeIncome()
     {
-        if (CurrencyManager.current.HasMoney(currentIncomeCost))
+        if (CurrencyManager.current.HasMoney(_roomStats.currentIncomeCost) && !_roomStats.locked)
         {
-            CurrencyManager.current.AddSoftCurrency(-currentIncomeCost);
-            incomeLevel += 1;
-            currentIncomeCost = UpgradeCost(incomeLevel, _roomStats.baseIncomeCost, _roomStats.incomeCostMultiplier);
+            CurrencyManager.current.AddSoftCurrency(-_roomStats.currentIncomeCost);
+            _roomStats.level += 1;
+            UpgradeCost();
             UpdateIncomeRate();
-            incomeRateUpgradeCost.text = "" + currentIncomeCost;
+            UpdateCompletionTime();
+            incomeRateUpgradeCost.text = "" + _roomStats.currentIncomeCost;
         }
     }
 
-    private int UpgradeCost(int level, int baseCost, float multiplier)
+    private void UpgradeCost()
     {
-        return (int) Math.Round(baseCost * Mathf.Pow(multiplier, level));
+        _roomStats.currentIncomeCost = (int) Math.Round(_roomStats.baseCost * Mathf.Pow(_roomStats.incomeCostMultiplier, _roomStats.level));
     }
 
     private void UpdateIncomeRate()
     {
-        currentIncomeRate = baseIncomeRate * incomeLevel;
+        _roomStats.currentIncomeRate = _roomStats.baseIncomeRate * _roomStats.level;
     }
     
-    private int GetNextIncomeRate()
-    {
-        return baseIncomeRate * (incomeLevel + 1);
+    private int GetNextIncomeRate() {
+        return _roomStats.baseIncomeRate * (_roomStats.level + 1);
     }
 
+    public int getCurrentIncomeRate() {
+        return _roomStats.currentIncomeRate;
+    }
+
+    public void UpdateCompletionTime() {
+        _roomStats.currentCompletionTime =
+            _roomStats.baseCompletionTime * (_roomStats.level / _roomStats.completionTimeMultiplier);
+    }
 }

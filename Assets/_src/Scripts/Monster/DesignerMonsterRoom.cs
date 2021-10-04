@@ -6,16 +6,21 @@ using UnityEngine;
 public class DesignerMonsterRoom : ScriptableObject
 {
     public string monsterName;
-
+    
     public int costToUnlock;
+    public bool locked;
 
-    public int baseIncomeCost;
-    public int baseIncome;
-    public float incomeCostMultiplier;
+    public int level = 1;
+    
+    public int baseCost;
+    public int baseIncomeRate;
+    
+    public float incomeCostMultiplier = 1.1f;
 
     public float baseCompletionTime;
     public float completionTimeMultiplier;
-
     
-
+    public int currentIncomeCost;
+    public int currentIncomeRate;
+    public float currentCompletionTime;
 }

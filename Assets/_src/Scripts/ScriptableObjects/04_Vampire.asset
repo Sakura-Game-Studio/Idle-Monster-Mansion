@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3445412c3ff43fd4999e4142e4cee93d, type: 3}
   m_Name: 04_Vampire
   m_EditorClassIdentifier: 
-  monsterName: 
-  costToUnlock: 0
-  baseIncomeCost: 0
-  baseIncome: 0
-  baseCompletionTime: 0
-  initialCapacity: 0
-  baseCapacityCost: 0
+  monsterName: Vampire
+  costToUnlock: 1500
+  locked: 1
+  level: 1
+  baseCost: 1000
+  baseIncomeRate: 100
+  incomeCostMultiplier: 1.1
+  baseCompletionTime: 20
+  completionTimeMultiplier: 8
+  currentIncomeCost: 0
+  currentIncomeRate: 0
+  currentCompletionTime: 0

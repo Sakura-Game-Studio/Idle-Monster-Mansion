@@ -227,25 +227,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  monsterName: Zombie
-  moneyInBank: 0
-  incomeLevel: 1
-  bankLevel: 1
-  baseIncomeCost: 5
-  baseBankCost: 5
-  baseIncomeRate: 1
-  baseBankSize: 10
-  incomeCostMultiplier: 1.07
-  bankCostMultiplier: 1.07
-  currentIncomeRate: 1
-  currentIncomeCost: 6
-  currentBankSize: 10
-  currentBankCost: 6
+  _roomStats: {fileID: 0}
+  incomeLevel: 0
+  baseIncomeCost: 0
+  baseIncomeRate: 0
+  incomeCostMultiplier: 0
+  currentIncomeRate: 0
+  currentIncomeCost: 0
   incomeRateUpgradeText: {fileID: 0}
   incomeRateUpgradeCost: {fileID: 0}
-  bankSizeUpgradeText: {fileID: 0}
-  bankSizeUpgradeCost: {fileID: 0}
-  moneyInStorageText: {fileID: 0}
 --- !u!114 &3078402557184278773
 MonoBehaviour:
   m_ObjectHideFlags: 0
