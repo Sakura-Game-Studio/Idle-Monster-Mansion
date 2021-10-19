@@ -7002,9 +7002,21 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: -587245596748014913, guid: 5f542208a46b0054fb7d9e6e3c1804bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.287
+      objectReference: {fileID: 0}
+    - target: {fileID: -587245596748014913, guid: 5f542208a46b0054fb7d9e6e3c1804bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.287
+      objectReference: {fileID: 0}
+    - target: {fileID: -587245596748014913, guid: 5f542208a46b0054fb7d9e6e3c1804bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.437
+      objectReference: {fileID: 0}
     - target: {fileID: -447275898630060098, guid: 5f542208a46b0054fb7d9e6e3c1804bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.38
+      value: 10.66
       objectReference: {fileID: 0}
     - target: {fileID: -447275898630060098, guid: 5f542208a46b0054fb7d9e6e3c1804bd, type: 3}
       propertyPath: m_LocalRotation.w
