@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GuestMovement : MonoBehaviour {
     public GameObject gameController;
@@ -18,9 +19,14 @@ public class GuestMovement : MonoBehaviour {
     private float currentTime = 0;
 
     private int currentRoomNumber = 1;
+
+    public Sprite[] sprites;
+    public SpriteRenderer spriteRender;
     
     // Start is called before the first frame update
     void Start() {
+        ChangeSprite();
+        
         gameController = GameObject.Find("Game Controller");
         positionRoom = gameController.GetComponent<RoomsPositions>();
         
@@ -78,5 +84,23 @@ public class GuestMovement : MonoBehaviour {
             transform.rotation = Quaternion.Euler(0,0,10);
         }
         rotateDirection = !rotateDirection;
+    }
+
+    public void ChangeSprite() {
+        int number = (int)Random.Range(1, 5);
+        switch (number) {
+            case 1:
+                spriteRender.sprite = sprites[0];
+                break;
+            case 2:
+                spriteRender.sprite = sprites[1];
+                break;
+            case 3:
+                spriteRender.sprite = sprites[2];
+                break;
+            case 4:
+                spriteRender.sprite = sprites[3];
+                break;
+        }
     }
 }
