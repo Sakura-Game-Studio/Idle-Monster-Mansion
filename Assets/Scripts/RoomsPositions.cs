@@ -98,33 +98,78 @@ public class RoomsPositions : MonoBehaviour {
         }
     }
 
-    public bool GetPositionState(Transform[] currentRoom, int RoomNumber) {
-        if (currentRoom == entrancePositions) {
-            return entranceBusy[RoomNumber];
-        } else if (currentRoom == receptionPositions) {
-            return receptionBusy[RoomNumber];
-        } else if (currentRoom == room01Positions) {
-            return room01Busy[RoomNumber];
-        } else if (currentRoom == room02Positions) {
-            return room02Busy[RoomNumber];
-        }  else if (currentRoom == room03Positions) {
-            return room03Busy[RoomNumber];
-        } else if (currentRoom == room04Positions) {
-            return room04Busy[RoomNumber];
-        } else if (currentRoom == room05Positions) {
-            return room05Busy[RoomNumber];
-        } else if (currentRoom == room06Positions) {
-            return room06Busy[RoomNumber];
-        } else if (currentRoom == room07Positions) {
-            return room07Busy[RoomNumber];
-        } else if (currentRoom == room08Positions) {
-            return room08Busy[RoomNumber];
-        } else if (currentRoom == room09Positions) {
-            return room09Busy[RoomNumber];
-        } else if (currentRoom == room10Positions) {
-            return room10Busy[RoomNumber];
-        }else {
-            return exitBusy[RoomNumber];
+    public bool GetPositionState(Transform[] currentRoom, int RoomNumber, int position) {
+        if (position > currentRoom.Length - 1) {
+            if (currentRoom == entrancePositions) {
+                return receptionBusy[0];
+            } else if (currentRoom == receptionPositions) {
+                return room01Busy[0];
+            } else if (currentRoom == room01Positions) {
+                return room02Busy[0];
+            } else if (currentRoom == room02Positions) {
+                return room03Busy[0];
+            }  else if (currentRoom == room03Positions) {
+                return room04Busy[0];
+            } else if (currentRoom == room04Positions) {
+                return room05Busy[0];
+            } else if (currentRoom == room05Positions) {
+                return room06Busy[0];
+            } else if (currentRoom == room06Positions) {
+                return room07Busy[0];
+            } else if (currentRoom == room07Positions) {
+                return room08Busy[0];
+            } else if (currentRoom == room08Positions) {
+                return room09Busy[0];
+            } else if (currentRoom == room09Positions) {
+                return room10Busy[0];
+            } else if (currentRoom == room10Positions) {
+                return exitBusy[0];
+            }else {
+                return true;
+            }
+        } else {
+            if (position == currentRoom.Length) {
+                position = 0;
+            }
+            if (currentRoom == entrancePositions) {
+                return entranceBusy[position];
+            }
+            else if (currentRoom == receptionPositions) {
+                return receptionBusy[position];
+            }
+            else if (currentRoom == room01Positions) {
+                return room01Busy[position];
+            }
+            else if (currentRoom == room02Positions) {
+                return room02Busy[position];
+            }
+            else if (currentRoom == room03Positions) {
+                return room03Busy[position];
+            }
+            else if (currentRoom == room04Positions) {
+                return room04Busy[position];
+            }
+            else if (currentRoom == room05Positions) {
+                return room05Busy[position];
+            }
+            else if (currentRoom == room06Positions) {
+                return room06Busy[position];
+            }
+            else if (currentRoom == room07Positions) {
+                return room07Busy[position];
+            }
+            else if (currentRoom == room08Positions) {
+                return room08Busy[position];
+            }
+            else if (currentRoom == room09Positions) {
+                return room09Busy[position];
+            }
+            else if (currentRoom == room10Positions) {
+                return room10Busy[position];
+            }
+            else {
+                return exitBusy[position];
+            }
         }
     }
 
@@ -160,5 +205,9 @@ public class RoomsPositions : MonoBehaviour {
         }
         
         return newArray;
+    }
+
+    public bool GetIntialPosition() {
+        return entranceBusy[0];
     }
 }

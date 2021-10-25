@@ -34,19 +34,16 @@ public class TouchControl : MonoBehaviour {
     void Update() {
 
         if(Input.GetMouseButtonDown(0)){
-            //SendMessage("Play");
-
             if (ClickOnUI()) {
                 return;
             }
-
             touchStart = cam.ScreenToWorldPoint(Input.mousePosition);
         }
+        
         if(Input.touchCount == 2){
             if (ClickOnUI()) {
                 return;
             }
-            
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
 
