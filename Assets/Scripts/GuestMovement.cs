@@ -68,6 +68,10 @@ public class GuestMovement : MonoBehaviour {
             currentTimeToExecute = 0;
             executing = false;
         }
+        
+        if (currentRoomNumber == 13 && currentPosition == 5) {
+            Destroy(gameObject);
+        }
     }
 
     public void MoveToNextPosition() {
@@ -103,20 +107,13 @@ public class GuestMovement : MonoBehaviour {
                     positionRoom.SetEmpty(currentRoom, currentPosition);
                     currentRoom = positionRoom.ChangeRoom(currentRoomNumber);
 
-                    if (currentRoom == null)
-                    {
-                        Destroy(gameObject);
-                    }
-                    else
-                    {
-                        nextPosition = 1;
-                        currentPosition = 0;
-                        transform.position = currentRoom[currentPosition].position;
+                    nextPosition = 1;
+                    currentPosition = 0;
+                    transform.position = currentRoom[currentPosition].position;
 
-                        guestRotate();
+                    guestRotate();
 
-                        positionRoom.SetBusy(currentRoom, currentPosition);
-                    }
+                    positionRoom.SetBusy(currentRoom, currentPosition);
                 }
                 else
                 {
