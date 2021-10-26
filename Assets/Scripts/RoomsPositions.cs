@@ -48,21 +48,21 @@ public class RoomsPositions : MonoBehaviour {
         } else if (currentRoom == room02Positions) {
             room02Busy[currentRoomNumber] = true;
         }  else if (currentRoom == room03Positions) {
-            room01Busy[currentRoomNumber] = true;
+            room03Busy[currentRoomNumber] = true;
         } else if (currentRoom == room04Positions) {
-            room01Busy[currentRoomNumber] = true;
+            room04Busy[currentRoomNumber] = true;
         } else if (currentRoom == room05Positions) {
-            room01Busy[currentRoomNumber] = true;
+            room05Busy[currentRoomNumber] = true;
         } else if (currentRoom == room06Positions) {
-            room01Busy[currentRoomNumber] = true;
+            room06Busy[currentRoomNumber] = true;
         } else if (currentRoom == room07Positions) {
-            room01Busy[currentRoomNumber] = true;
+            room07Busy[currentRoomNumber] = true;
         } else if (currentRoom == room08Positions) {
-            room01Busy[currentRoomNumber] = true;
+            room08Busy[currentRoomNumber] = true;
         } else if (currentRoom == room09Positions) {
-            room01Busy[currentRoomNumber] = true;
+            room09Busy[currentRoomNumber] = true;
         } else if (currentRoom == room10Positions) {
-            room01Busy[currentRoomNumber] = true;
+            room10Busy[currentRoomNumber] = true;
         }else {
             exitBusy[currentRoomNumber] = true;
         }
@@ -78,21 +78,21 @@ public class RoomsPositions : MonoBehaviour {
         } else if (currentRoom == room02Positions) {
             room02Busy[currentRoomNumber] = false;
         }  else if (currentRoom == room03Positions) {
-            room01Busy[currentRoomNumber] = false;
+            room03Busy[currentRoomNumber] = false;
         } else if (currentRoom == room04Positions) {
-            room01Busy[currentRoomNumber] = false;
+            room04Busy[currentRoomNumber] = false;
         } else if (currentRoom == room05Positions) {
-            room01Busy[currentRoomNumber] = false;
+            room05Busy[currentRoomNumber] = false;
         } else if (currentRoom == room06Positions) {
-            room01Busy[currentRoomNumber] = false;
+            room06Busy[currentRoomNumber] = false;
         } else if (currentRoom == room07Positions) {
-            room01Busy[currentRoomNumber] = false;
+            room07Busy[currentRoomNumber] = false;
         } else if (currentRoom == room08Positions) {
-            room01Busy[currentRoomNumber] = false;
+            room08Busy[currentRoomNumber] = false;
         } else if (currentRoom == room09Positions) {
-            room01Busy[currentRoomNumber] = false;
+            room09Busy[currentRoomNumber] = false;
         } else if (currentRoom == room10Positions) {
-            room01Busy[currentRoomNumber] = false;
+            room10Busy[currentRoomNumber] = false;
         }else {
             exitBusy[currentRoomNumber] = false;
         }

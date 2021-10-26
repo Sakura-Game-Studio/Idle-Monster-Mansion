@@ -17,6 +17,7 @@ public class GuestSpawner : MonoBehaviour {
         positionRoom = gameController.GetComponent<RoomsPositions>();
         
         timeToSpawn = (int)Random.Range(5, 10);
+        Instantiate(guest);
     }
 
     // Update is called once per frame

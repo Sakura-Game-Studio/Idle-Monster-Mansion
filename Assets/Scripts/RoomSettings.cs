@@ -11,20 +11,22 @@ public class RoomSettings : MonoBehaviour {
 
     public int level = 1;
     
-    public int baseCost;
-    public int baseIncomeRate;
+    public double baseCost;
+    public double baseIncomeRate;
     
     public float incomeCostMultiplier = 1.1f;
 
     public float baseCompletionTime;
     public float completionTimeMultiplier;
     
-    public int currentIncomeCost;
-    public int currentIncomeRate;
+    public double currentIncomeCost;
+    public double currentIncomeRate;
     public float currentCompletionTime;
 
     private void Start() {
-        UpdateCompletionTime();
+        currentCompletionTime = baseCompletionTime;
+        currentIncomeCost = baseCost;
+        currentIncomeRate = baseIncomeRate;
     }
 
     public float GetCompletionTime() {
