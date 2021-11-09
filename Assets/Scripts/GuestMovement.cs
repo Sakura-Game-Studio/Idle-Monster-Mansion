@@ -70,6 +70,7 @@ public class GuestMovement : MonoBehaviour {
         }
         
         if (currentRoomNumber == 13 && currentPosition == 5) {
+            positionRoom.SetEmpty(currentRoom, currentPosition);
             Destroy(gameObject);
         }
     }
