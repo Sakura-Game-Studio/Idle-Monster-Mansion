@@ -33,6 +33,8 @@ public class GuestMovement : MonoBehaviour {
 
     public int angle;
     public Image timer;
+
+    public CurrencyManager currencyManager;
     
     // Start is called before the first frame update
     void Start() {
@@ -42,6 +44,7 @@ public class GuestMovement : MonoBehaviour {
         gameController = GameObject.Find("Game Controller");
         positionRoom = gameController.GetComponent<RoomsPositions>();
         roomStatsArray = gameController.GetComponent<RoomsStats>();
+        currencyManager = gameController.GetComponent<CurrencyManager>();
 
         currentRoomStats = roomStatsArray.SetupStats();
         currentRoom = positionRoom.SetupPosition();
@@ -67,6 +70,7 @@ public class GuestMovement : MonoBehaviour {
         if (currentTimeToExecute >= timerToExecute) {
             currentTimeToExecute = 0;
             executing = false;
+            currencyManager.EarnMoney(currentRoomStats);
         }
         
         if (currentRoomNumber == 13 && currentPosition == 5) {

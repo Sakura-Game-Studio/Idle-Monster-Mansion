@@ -36,4 +36,36 @@ public class RoomSettings : MonoBehaviour {
     public void UpdateCompletionTime() {
         currentCompletionTime = baseCompletionTime * (level /completionTimeMultiplier);
     }
+
+    public double GetIncomeRate() {
+        return currentIncomeRate;
+    }
+
+    public void UpdateIncomeRate() {
+        currentIncomeRate = baseIncomeRate * level;
+    }
+
+    public double GetIncomeCost() {
+        return currentIncomeCost;
+    }
+    
+    public void UpdateIncomeCost() {
+        currentIncomeCost = baseCost * (Mathf.Pow(level, incomeCostMultiplier));
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void UpdateLevel() {
+        level++;
+    }
+
+    public void UpgradeRoom() {
+        UpdateLevel();
+        UpdateIncomeCost();
+        UpdateIncomeRate();
+        UpdateCompletionTime();
+    }
+
 }
