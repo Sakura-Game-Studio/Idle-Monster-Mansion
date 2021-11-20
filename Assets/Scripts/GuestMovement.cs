@@ -32,9 +32,9 @@ public class GuestMovement : MonoBehaviour {
     public SpriteRenderer spriteRender;
 
     public int angle;
-    public Image timer;
 
     public CurrencyManager currencyManager;
+    public TimerImageController timerImageController;
     
     // Start is called before the first frame update
     void Start() {
@@ -45,7 +45,8 @@ public class GuestMovement : MonoBehaviour {
         positionRoom = gameController.GetComponent<RoomsPositions>();
         roomStatsArray = gameController.GetComponent<RoomsStats>();
         currencyManager = gameController.GetComponent<CurrencyManager>();
-
+        timerImageController= gameController.GetComponent<TimerImageController>();
+            
         currentRoomStats = roomStatsArray.SetupStats();
         currentRoom = positionRoom.SetupPosition();
         positionRoom.SetBusy(currentRoom, currentPosition);
@@ -166,6 +167,9 @@ public class GuestMovement : MonoBehaviour {
 
         if (!nameRoom.Equals("Null")) {
             if (currentPosition == 4) {
+                if (executing == false) {
+                    timerImageController.TimerON(currentRoomNumber, timerToExecute);
+                }
                 executing = true;
             }
         }
