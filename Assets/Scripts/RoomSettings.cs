@@ -32,12 +32,26 @@ public class RoomSettings : MonoBehaviour {
     public Image lockedImage;
 
     private void Start() {
-        currentCompletionTime = baseCompletionTime;
-        currentCostUpgrade = baseCost;
-        currentIncomeRate = baseIncomeRate;
-        
+        if (PlayerPrefs.HasKey(roomName)) {
+            level = PlayerPrefs.GetInt(roomName);
+            UpdateUpgradeCost();
+            UpdateIncomeRate();
+            UpdateCompletionTime();
+        }else {
+            currentCompletionTime = baseCompletionTime;
+            currentCostUpgrade = baseCost;
+            currentIncomeRate = baseIncomeRate;
+        }
+
         gameController = GameObject.Find("Game Controller");
         currencyManager = gameController.GetComponent<CurrencyManager>();
+        
+        if (PlayerPrefs.HasKey(roomName + "locked")) {
+            int lockedSave = PlayerPrefs.GetInt(roomName + "locked");
+            if (lockedSave == 1) {
+                UnlockSave();
+            }
+        }
     }
 
     public float GetCompletionTime() {
@@ -62,7 +76,7 @@ public class RoomSettings : MonoBehaviour {
     }
     
     public void UpdateUpgradeCost() {
-        currentCostUpgrade = baseCost * (Mathf.Pow(incomeCostMultiplier, level));
+        currentCostUpgrade = baseCost * (Mathf.Pow(incomeCostMultiplier, level - 1));
         currentCostUpgrade = Math.Round(currentCostUpgrade, 2);
     }
 
@@ -72,12 +86,13 @@ public class RoomSettings : MonoBehaviour {
 
     public void UpdateLevel() {
         level++;
+        PlayerPrefs.SetInt(roomName, level);
     }
 
     public void UpgradeRoom() {
         if (currencyManager.HasUpgradeCost(currentCostUpgrade) && level < 100) {
-            UpdateUpgradeCost();
             UpdateLevel();
+            UpdateUpgradeCost();
             UpdateIncomeRate();
             UpdateCompletionTime();
         }
@@ -90,12 +105,20 @@ public class RoomSettings : MonoBehaviour {
     public void Unlock() {
         if (currencyManager.HasUnlockCost(costToUnlock) && !previousRoom.IsLocked()){
             locked = false;
+            PlayerPrefs.SetInt(roomName + "locked", 1);
             var tempColor = lockedImage.color;
             tempColor.a = 0;
             lockedImage.color = tempColor;
         }
     }
-    
+
+    public void UnlockSave() {
+        locked = false;
+        var tempColor = lockedImage.color;
+        tempColor.a = 0;
+        lockedImage.color = tempColor;
+    }
+
     public void ClickMouse() {
         if (IsLocked()) {
             Unlock();

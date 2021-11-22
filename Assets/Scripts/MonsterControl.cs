@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MonsterControl : MonoBehaviour {
-    public SpriteRenderer zombie, ghost, skeleton, vampire, demon, werewolf, mummy, scarecrow, slime, samara;
+    public SpriteRenderer receptionist ,zombie, ghost, skeleton, vampire, demon, werewolf, mummy, scarecrow, slime, samara;
     
+    public Sprite receptionistSprite, receptionistAttackSprite;
     public Sprite zombieSprite, zombieAttackSprite;
     public Sprite ghostSprite, ghostAttackSprite;
     public Sprite skeletonSprite, skeletonAttackSprite;
@@ -20,6 +21,9 @@ public class MonsterControl : MonoBehaviour {
 
     public void Scare(int currentRoomNumber) {
         switch (currentRoomNumber) {
+            case 2:
+                receptionist.sprite = receptionistAttackSprite;
+                break;
             case 3:
                 zombie.sprite = zombieAttackSprite;
                 break;
@@ -55,6 +59,9 @@ public class MonsterControl : MonoBehaviour {
 
     public void ResetScare(int currentRoomNumber) {
         switch (currentRoomNumber) {
+            case 2:
+                receptionist.sprite = receptionistSprite;
+                break;
             case 3:
                 zombie.sprite = zombieSprite;
                 break;
