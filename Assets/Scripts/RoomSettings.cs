@@ -32,10 +32,18 @@ public class RoomSettings : MonoBehaviour {
     public Image lockedImage;
 
     private void Start() {
-        currentCompletionTime = baseCompletionTime;
-        currentCostUpgrade = baseCost;
-        currentIncomeRate = baseIncomeRate;
         
+        if (PlayerPrefs.HasKey(roomName)) {
+            level = PlayerPrefs.GetInt(roomName);
+            UpdateUpgradeCost();
+            UpdateIncomeRate();
+            UpdateCompletionTime();
+        }else {
+            currentCompletionTime = baseCompletionTime;
+            currentCostUpgrade = baseCost;
+            currentIncomeRate = baseIncomeRate;
+        }
+
         gameController = GameObject.Find("Game Controller");
         currencyManager = gameController.GetComponent<CurrencyManager>();
     }
@@ -62,7 +70,7 @@ public class RoomSettings : MonoBehaviour {
     }
     
     public void UpdateUpgradeCost() {
-        currentCostUpgrade = baseCost * (Mathf.Pow(incomeCostMultiplier, level));
+        currentCostUpgrade = baseCost * (Mathf.Pow(incomeCostMultiplier, level - 1));
         currentCostUpgrade = Math.Round(currentCostUpgrade, 2);
     }
 
@@ -72,12 +80,13 @@ public class RoomSettings : MonoBehaviour {
 
     public void UpdateLevel() {
         level++;
+        PlayerPrefs.SetInt(roomName, level);
     }
 
     public void UpgradeRoom() {
         if (currencyManager.HasUpgradeCost(currentCostUpgrade) && level < 100) {
-            UpdateUpgradeCost();
             UpdateLevel();
+            UpdateUpgradeCost();
             UpdateIncomeRate();
             UpdateCompletionTime();
         }
