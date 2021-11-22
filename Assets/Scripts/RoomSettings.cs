@@ -24,9 +24,6 @@ public class RoomSettings : MonoBehaviour {
     public double currentIncomeRate;
     public float currentCompletionTime;
 
-    private GameObject gameController;
-    private CurrencyManager currencyManager;
-
     public RoomSettings previousRoom;
 
     public Image lockedImage;
@@ -42,9 +39,6 @@ public class RoomSettings : MonoBehaviour {
             currentCostUpgrade = baseCost;
             currentIncomeRate = baseIncomeRate;
         }
-
-        gameController = GameObject.Find("Game Controller");
-        currencyManager = gameController.GetComponent<CurrencyManager>();
         
         if (PlayerPrefs.HasKey(roomName + "locked")) {
             int lockedSave = PlayerPrefs.GetInt(roomName + "locked");
@@ -62,6 +56,16 @@ public class RoomSettings : MonoBehaviour {
         currentCompletionTime = baseCompletionTime - (level / completionTimeMultiplier);
     }
 
+    public float GetNextCompletionTime()
+    {
+        return baseCompletionTime - ((level + 1) / completionTimeMultiplier);
+    }
+
+    public double GetUpgradeTimeDifference()
+    {
+        return Math.Round(GetNextCompletionTime() - GetCompletionTime(), 2);
+    }
+
     public double GetIncomeRate() {
         return currentIncomeRate;
     }
@@ -69,6 +73,16 @@ public class RoomSettings : MonoBehaviour {
     public void UpdateIncomeRate() {
         currentIncomeRate = baseIncomeRate * level;
         currentIncomeRate = Math.Round(currentIncomeRate, 2);
+    }
+
+    public double GetNextIncomeRate()
+    {
+        return baseIncomeRate * (level+1);
+    }
+
+    public double GetUpgradeIncomeDifference()
+    {
+        return Math.Round(GetNextIncomeRate() - GetIncomeRate(), 2);
     }
 
     public double GetUpgradeCost() {
@@ -90,9 +104,10 @@ public class RoomSettings : MonoBehaviour {
     }
 
     public void UpgradeRoom() {
-        if (currencyManager.HasUpgradeCost(currentCostUpgrade) && level < 100) {
-            UpdateLevel();
+        if (CanUpgrade()) {
+            CurrencyManager.Instance.ChangeMoney(-currentCostUpgrade);
             UpdateUpgradeCost();
+            UpdateLevel();
             UpdateIncomeRate();
             UpdateCompletionTime();
         }
@@ -103,7 +118,8 @@ public class RoomSettings : MonoBehaviour {
     }
 
     public void Unlock() {
-        if (currencyManager.HasUnlockCost(costToUnlock) && !previousRoom.IsLocked()){
+        if (CanUnlock()){
+            CurrencyManager.Instance.ChangeMoney(-costToUnlock);
             locked = false;
             PlayerPrefs.SetInt(roomName + "locked", 1);
             var tempColor = lockedImage.color;
@@ -112,6 +128,7 @@ public class RoomSettings : MonoBehaviour {
         }
     }
 
+<<<<<<< HEAD
     public void UnlockSave() {
         locked = false;
         var tempColor = lockedImage.color;
@@ -125,5 +142,19 @@ public class RoomSettings : MonoBehaviour {
         }else {
             UpgradeRoom();
         }
+=======
+    public bool CanUpgrade()
+    {
+        if (CurrencyManager.Instance.HasUpgradeCost(currentCostUpgrade) && level < 100)
+            return true;
+        return false;
+    }
+
+    public bool CanUnlock()
+    {
+        if (CurrencyManager.Instance.HasUnlockCost(costToUnlock) && !previousRoom.IsLocked())
+            return true;
+        return false;
+>>>>>>> UI
     }
 }
