@@ -32,7 +32,6 @@ public class RoomSettings : MonoBehaviour {
     public Image lockedImage;
 
     private void Start() {
-        
         if (PlayerPrefs.HasKey(roomName)) {
             level = PlayerPrefs.GetInt(roomName);
             UpdateUpgradeCost();
@@ -46,6 +45,13 @@ public class RoomSettings : MonoBehaviour {
 
         gameController = GameObject.Find("Game Controller");
         currencyManager = gameController.GetComponent<CurrencyManager>();
+        
+        if (PlayerPrefs.HasKey(roomName + "locked")) {
+            int lockedSave = PlayerPrefs.GetInt(roomName + "locked");
+            if (lockedSave == 1) {
+                UnlockSave();
+            }
+        }
     }
 
     public float GetCompletionTime() {
@@ -99,12 +105,20 @@ public class RoomSettings : MonoBehaviour {
     public void Unlock() {
         if (currencyManager.HasUnlockCost(costToUnlock) && !previousRoom.IsLocked()){
             locked = false;
+            PlayerPrefs.SetInt(roomName + "locked", 1);
             var tempColor = lockedImage.color;
             tempColor.a = 0;
             lockedImage.color = tempColor;
         }
     }
-    
+
+    public void UnlockSave() {
+        locked = false;
+        var tempColor = lockedImage.color;
+        tempColor.a = 0;
+        lockedImage.color = tempColor;
+    }
+
     public void ClickMouse() {
         if (IsLocked()) {
             Unlock();
