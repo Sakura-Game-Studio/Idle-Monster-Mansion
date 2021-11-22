@@ -26,6 +26,8 @@ public class RoomSettings : MonoBehaviour {
     private GameObject gameController;
     private CurrencyManager currencyManager;
 
+    public RoomSettings previousRoom;
+
     private void Start() {
         currentCompletionTime = baseCompletionTime;
         currentCostUpgrade = baseCost;
@@ -49,6 +51,7 @@ public class RoomSettings : MonoBehaviour {
 
     public void UpdateIncomeRate() {
         currentIncomeRate = baseIncomeRate * level;
+        currentIncomeRate = Math.Round(currentIncomeRate, 2);
     }
 
     public double GetUpgradeCost() {
@@ -57,6 +60,7 @@ public class RoomSettings : MonoBehaviour {
     
     public void UpdateUpgradeCost() {
         currentCostUpgrade = baseCost * (Mathf.Pow(incomeCostMultiplier, level));
+        currentCostUpgrade = Math.Round(currentCostUpgrade, 2);
     }
 
     public int getLevel() {
@@ -68,7 +72,7 @@ public class RoomSettings : MonoBehaviour {
     }
 
     public void UpgradeRoom() {
-        if (currencyManager.HasUpgradeCost(currentCostUpgrade)) {
+        if (currencyManager.HasUpgradeCost(currentCostUpgrade) && level < 100) {
             UpdateUpgradeCost();
             UpdateLevel();
             UpdateIncomeRate();
@@ -81,7 +85,7 @@ public class RoomSettings : MonoBehaviour {
     }
 
     public void Unlock() {
-        if (currencyManager.HasUnlockCost(costToUnlock)){
+        if (currencyManager.HasUnlockCost(costToUnlock) && !previousRoom.IsLocked()){
             locked = false;
         }
     }

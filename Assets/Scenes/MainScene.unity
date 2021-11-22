@@ -150,7 +150,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5631259}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.63, y: -0.3681512}
+  m_AnchoredPosition: {x: 19.63, y: -0.3000002}
   m_SizeDelta: {x: 12.2717, y: 6.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5631261
@@ -2422,7 +2422,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249387865}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
@@ -2430,7 +2430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.3799973, y: -0.3681512}
+  m_AnchoredPosition: {x: 6.3799973, y: -0.3000002}
   m_SizeDelta: {x: 12.2717, y: 6.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &249387867
@@ -3499,7 +3499,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357443053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
@@ -3507,7 +3507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.63, y: -8.368151}
+  m_AnchoredPosition: {x: 19.63, y: -8.299999}
   m_SizeDelta: {x: 12.2717, y: 6.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &357443055
@@ -3794,6 +3794,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 460566818}
 --- !u!1 &396484727
 GameObject:
   m_ObjectHideFlags: 0
@@ -4185,6 +4186,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 1389701801}
 --- !u!114 &466096531 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7005059456050505325, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
@@ -4904,6 +4906,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 597099022}
 --- !u!4 &608727350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1f76d8cb0dbadcc4694834ba7abe6941, type: 3}
@@ -5382,6 +5385,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 1127916971}
 --- !u!1 &684565281
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,7 +6557,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836599439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
@@ -6561,7 +6565,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.3799973, y: 7.631849}
+  m_AnchoredPosition: {x: 6.3799973, y: 7.7}
   m_SizeDelta: {x: 12.2717, y: 6.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &836599441
@@ -8850,7 +8854,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033612792}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
@@ -8858,7 +8862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.6200027, y: 7.631849}
+  m_AnchoredPosition: {x: -6.6200027, y: 7.7}
   m_SizeDelta: {x: 12.2717, y: 6.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1033612794
@@ -9507,6 +9511,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 1695464140}
 --- !u!1 &1139865436
 GameObject:
   m_ObjectHideFlags: 0
@@ -9534,7 +9539,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139865436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
@@ -9542,7 +9547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.3799973, y: -8.368151}
+  m_AnchoredPosition: {x: 6.3799973, y: -8.299999}
   m_SizeDelta: {x: 12.2717, y: 6.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1139865438
@@ -9869,6 +9874,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 1596002614}
 --- !u!1 &1169284636
 GameObject:
   m_ObjectHideFlags: 0
@@ -9896,7 +9902,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169284636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
@@ -9904,7 +9910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.6200027, y: -0.3681512}
+  m_AnchoredPosition: {x: -6.6200027, y: -0.3000002}
   m_SizeDelta: {x: 12.2717, y: 6.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1169284638
@@ -10272,6 +10278,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 394243740}
 --- !u!1 &1193321699
 GameObject:
   m_ObjectHideFlags: 0
@@ -11415,6 +11422,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 597099022}
 --- !u!1 &1404036373
 GameObject:
   m_ObjectHideFlags: 0
@@ -12772,6 +12780,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 1186523989}
 --- !u!1 &1598718238
 GameObject:
   m_ObjectHideFlags: 0
@@ -13411,7 +13420,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694319937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
@@ -13419,7 +13428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.63, y: 7.631849}
+  m_AnchoredPosition: {x: 19.63, y: 7.7}
   m_SizeDelta: {x: 12.2717, y: 6.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1694319939
@@ -13653,6 +13662,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 1169271256}
 --- !u!1001 &1705286719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16583,7 +16593,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939212588}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
@@ -16591,7 +16601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.6200027, y: -8.368151}
+  m_AnchoredPosition: {x: -6.6200027, y: -8.299999}
   m_SizeDelta: {x: 12.2717, y: 6.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1939212590
@@ -18308,6 +18318,7 @@ MonoBehaviour:
   currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
+  previousRoom: {fileID: 680829306}
 --- !u!1 &2132584714
 GameObject:
   m_ObjectHideFlags: 0

@@ -70,6 +70,10 @@ public class GuestMovement : MonoBehaviour {
 
         if (currentTimeToExecute >= timerToExecute) {
             currentTimeToExecute = 0;
+            if (positionRoom.GetPositionState(currentRoom, currentRoomNumber, nextPosition)) {
+                currentRoomNumber = 12;
+                MoveToNextPosition();
+            }
             executing = false;
             currencyManager.EarnMoney(currentRoomStats);
         }
@@ -84,8 +88,7 @@ public class GuestMovement : MonoBehaviour {
         if (!executing) {
             if (currentPosition < currentRoom.Length - 1)
             {
-                if (!positionRoom.GetPositionState(currentRoom, currentRoomNumber, nextPosition))
-                {
+                if (!positionRoom.GetPositionState(currentRoom, currentRoomNumber, nextPosition)) {
                     transform.position = currentRoom[nextPosition].position;
 
                     positionRoom.SetEmpty(currentRoom, currentPosition);
