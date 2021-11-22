@@ -1232,7 +1232,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5162115347ee7084a9cecb14971e3d41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cddf694a5da9314c8160834d2f721eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2033,7 +2033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225581104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.008, y: 6.24, z: -3}
+  m_LocalPosition: {x: 5.008, y: 6.443, z: -3}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_Children: []
   m_Father: {fileID: 1930649229}
@@ -7255,7 +7255,7 @@ MonoBehaviour:
   slime: {fileID: 924720492}
   samara: {fileID: 927247051}
   zombieSprite: {fileID: 21300000, guid: d771989fc0fc2b345be3905f2432e675, type: 3}
-  zombieAttackSprite: {fileID: 21300000, guid: 98b83f805f67a34428f84e59b161770e, type: 3}
+  zombieAttackSprite: {fileID: 21300000, guid: a08f26d040102de40bf9484771521cb9, type: 3}
   ghostSprite: {fileID: 21300000, guid: 95966586d0ac6ba4ea30a7d621497880, type: 3}
   ghostAttackSprite: {fileID: 21300000, guid: bb8b4ae8744ab4a43833e422f4d73b81, type: 3}
   skeletonSprite: {fileID: 21300000, guid: 18a47058cc5e9e44f8a81a9b8692195e, type: 3}
@@ -7264,16 +7264,16 @@ MonoBehaviour:
   vampireAttackSprite: {fileID: 21300000, guid: c6570b7d1c474aa4998846fe77c9529a, type: 3}
   demonSprite: {fileID: 21300000, guid: 653c4a222f854a64b897fe8aef7374ba, type: 3}
   demonAttackSprite: {fileID: 21300000, guid: 3a32a11a305b02b4287dffb5998b6e42, type: 3}
-  werewolfSprite: {fileID: 0}
-  werewolfAttackSprite: {fileID: 0}
-  mummySprite: {fileID: 0}
-  mummyAttackSprite: {fileID: 0}
-  scarecrowSprite: {fileID: 0}
-  scarecrowAttackSprite: {fileID: 0}
-  slimeSprite: {fileID: 0}
-  slimeAttackSprite: {fileID: 0}
-  samaraSprite: {fileID: 0}
-  samaraAttackSprite: {fileID: 0}
+  werewolfSprite: {fileID: 21300000, guid: f9a54c7cf926e394d9a299b4bbad50b1, type: 3}
+  werewolfAttackSprite: {fileID: 21300000, guid: 8e3b7f8eceb05cd439d1f2c28842ecd4, type: 3}
+  mummySprite: {fileID: 21300000, guid: 2cddf694a5da9314c8160834d2f721eb, type: 3}
+  mummyAttackSprite: {fileID: 21300000, guid: be905cda25dd10a46a5b7c129e34878f, type: 3}
+  scarecrowSprite: {fileID: 21300000, guid: 79e3fe6adcbe4f14286cc9c182e1b26e, type: 3}
+  scarecrowAttackSprite: {fileID: 21300000, guid: 20fb20e8c33ffed429e2498393ce8905, type: 3}
+  slimeSprite: {fileID: 21300000, guid: ee206de4c6b6de348af98d0eaf99fb85, type: 3}
+  slimeAttackSprite: {fileID: 21300000, guid: 6c4f3cd3af13ae749b02dc24e4ff975c, type: 3}
+  samaraSprite: {fileID: 21300000, guid: df2b8f6f8eda1634688bb2b20d35bee8, type: 3}
+  samaraAttackSprite: {fileID: 21300000, guid: 7ee062e58153c85479875ee3ebdb1179, type: 3}
 --- !u!4 &890939535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c15ef7981139bfd4a91f7a888bf1a97b, type: 3}
@@ -7674,7 +7674,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fd1344170713aec4b8a145f47c18df86, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee206de4c6b6de348af98d0eaf99fb85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7780,7 +7780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927247049}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.258, y: -9.76, z: -3}
+  m_LocalPosition: {x: 43.47, y: -9.76, z: -3}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_Children: []
   m_Father: {fileID: 1930649229}
@@ -7826,7 +7826,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5162115347ee7084a9cecb14971e3d41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ee062e58153c85479875ee3ebdb1179, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8227,7 +8227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981010940}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.258, y: 6.24, z: -3}
+  m_LocalPosition: {x: 43.51, y: 6.24, z: -3}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_Children: []
   m_Father: {fileID: 1930649229}
@@ -8273,7 +8273,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f25808ded83a08344b90aa25120a638b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 79e3fe6adcbe4f14286cc9c182e1b26e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9486,7 +9486,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f25808ded83a08344b90aa25120a638b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f892a1da3f2ee6a47b49433b6bd6eed3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13856,8 +13856,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707172477}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.008, y: -1.7600002, z: -3}
-  m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
+  m_LocalPosition: {x: 30.601, y: -1.7600002, z: -3}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_Children: []
   m_Father: {fileID: 1930649229}
   m_RootOrder: 5
@@ -13902,7 +13902,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fd1344170713aec4b8a145f47c18df86, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9a54c7cf926e394d9a299b4bbad50b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
