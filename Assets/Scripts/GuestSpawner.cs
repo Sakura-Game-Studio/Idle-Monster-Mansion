@@ -16,7 +16,7 @@ public class GuestSpawner : MonoBehaviour {
         gameController = GameObject.Find("Game Controller");
         positionRoom = gameController.GetComponent<RoomsPositions>();
         
-        timeToSpawn = (int)Random.Range(5, 10);
+        timeToSpawn = (int)Random.Range(10, 15);
         Instantiate(guest);
     }
 

@@ -35,6 +35,7 @@ public class GuestMovement : MonoBehaviour {
 
     public CurrencyManager currencyManager;
     public TimerImageController timerImageController;
+    public MonsterControl monsterControl;
     
     // Start is called before the first frame update
     void Start() {
@@ -45,7 +46,9 @@ public class GuestMovement : MonoBehaviour {
         positionRoom = gameController.GetComponent<RoomsPositions>();
         roomStatsArray = gameController.GetComponent<RoomsStats>();
         currencyManager = gameController.GetComponent<CurrencyManager>();
-        timerImageController= gameController.GetComponent<TimerImageController>();
+        timerImageController = gameController.GetComponent<TimerImageController>();
+        monsterControl= gameController.GetComponent<MonsterControl>();
+        
             
         currentRoomStats = roomStatsArray.SetupStats();
         currentRoom = positionRoom.SetupPosition();
@@ -63,6 +66,9 @@ public class GuestMovement : MonoBehaviour {
         
         if (executing) {
             currentTimeToExecute += Time.deltaTime;
+            if (currentTimeToExecute >= timerToExecute - 2) {
+                monsterControl.Scare(currentRoomNumber);
+            }
             guestResetRotation();
         }
         
@@ -74,6 +80,7 @@ public class GuestMovement : MonoBehaviour {
                 currentRoomNumber = 12;
                 MoveToNextPosition();
             }
+            monsterControl.ResetScare(currentRoomNumber);
             executing = false;
             currencyManager.EarnMoney(currentRoomStats);
         }

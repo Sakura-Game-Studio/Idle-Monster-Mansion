@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoomSettings : MonoBehaviour {
     public string roomName;
@@ -27,6 +28,8 @@ public class RoomSettings : MonoBehaviour {
     private CurrencyManager currencyManager;
 
     public RoomSettings previousRoom;
+
+    public Image lockedImage;
 
     private void Start() {
         currentCompletionTime = baseCompletionTime;
@@ -87,6 +90,9 @@ public class RoomSettings : MonoBehaviour {
     public void Unlock() {
         if (currencyManager.HasUnlockCost(costToUnlock) && !previousRoom.IsLocked()){
             locked = false;
+            var tempColor = lockedImage.color;
+            tempColor.a = 0;
+            lockedImage.color = tempColor;
         }
     }
     
