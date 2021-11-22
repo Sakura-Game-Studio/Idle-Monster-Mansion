@@ -9,11 +9,11 @@ public class MonsterRoomUpgradeScreen : MonoBehaviour
 {
     public static MonsterRoomUpgradeScreen Instance;
     
+    [SerializeField] private GameObject _upgradePanel;
+    
     [Header("Close Panel")] [SerializeField]
     private Button _closeButton;
-
-    [SerializeField] private GameObject _upgradePanel;
-
+    
     [Header("Basic Info")] [SerializeField]
     private TextMeshProUGUI _monsterName;
 

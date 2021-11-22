@@ -213,14 +213,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680829306}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -354,7 +354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &33540736
 RectTransform:
   m_ObjectHideFlags: 0
@@ -370,13 +370,13 @@ RectTransform:
   - {fileID: 1612549828}
   - {fileID: 800112651}
   - {fileID: 894438320}
-  m_Father: {fileID: 857152410}
+  m_Father: {fileID: 1518028645}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: -100, y: 900}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_SizeDelta: {x: 0, y: 800}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &33540737
 MonoBehaviour:
@@ -538,10 +538,10 @@ RectTransform:
   m_Father: {fileID: 800112651}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 382.02704, y: 0}
-  m_SizeDelta: {x: 764.0541, y: 121.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &56877210
 MonoBehaviour:
@@ -680,7 +680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &71455711
 RectTransform:
   m_ObjectHideFlags: 0
@@ -700,8 +700,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 382.02704, y: -263.3333}
-  m_SizeDelta: {x: 764.0541, y: 121.666664}
+  m_AnchoredPosition: {x: 455, y: -263.3333}
+  m_SizeDelta: {x: 910, y: 121.666664}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &71455712
 MonoBehaviour:
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
+  m_fontSize: 29.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2485,14 +2485,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1169271256}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2562,10 +2562,10 @@ RectTransform:
   m_Father: {fileID: 800112651}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 382.02704, y: -131.66666}
-  m_SizeDelta: {x: 764.0541, y: 121.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &252937625
 MonoBehaviour:
@@ -2587,7 +2587,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7c9481df8e54aa548bfb24825e04bceb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00830a62ff238d846aef911fec1c7067, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3562,14 +3562,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2132179687}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3879,7 +3879,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.6
+  m_fontSize: 62.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6620,14 +6620,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1596002614}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6813,7 +6813,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 33540736}
+  - {fileID: 1518028645}
   - {fileID: 684565282}
   m_Father: {fileID: 1193321703}
   m_RootOrder: 0
@@ -8703,10 +8703,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 597099022}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8917,14 +8917,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 460566818}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9602,14 +9602,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1695464140}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9965,14 +9965,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 394243740}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12392,6 +12392,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 38426eeb06191f74ea1339126f575a61, type: 3}
   m_PrefabInstance: {fileID: 917347373}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1518028643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1518028645}
+  - component: {fileID: 1518028644}
+  m_Layer: 5
+  m_Name: Monster Room Upgrade Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1518028644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518028643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7367641657a2638429455bcd91a5fbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _upgradePanel: {fileID: 33540735}
+  _closeButton: {fileID: 894438321}
+  _monsterName: {fileID: 396484729}
+  _description: {fileID: 83941253}
+  _monsterIcon: {fileID: 267251730}
+  _currentIncome: {fileID: 1495152347}
+  _currentTime: {fileID: 1879180944}
+  _currentCapacity: {fileID: 1016628542}
+  _upgradeIncome: {fileID: 192040382}
+  _upgradeTime: {fileID: 1176735298}
+  _upgradeCapacity: {fileID: 229936135}
+  _upgradeButton: {fileID: 852031882}
+  _upgradeButtonText: {fileID: 84244826}
+  _upgradeCostText: {fileID: 233538104}
+  _upgradeAvailableColor: {r: 0.04705883, g: 0.6745098, b: 0.04705883, a: 1}
+  _notAvailableColor: {r: 0.82745105, g: 0, b: 0, a: 1}
+--- !u!224 &1518028645
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518028643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 33540736}
+  m_Father: {fileID: 857152410}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 450}
+  m_SizeDelta: {x: -100, y: 800}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1533182833
 GameObject:
   m_ObjectHideFlags: 0
@@ -13483,14 +13548,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1127916971}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16656,14 +16721,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1186523989}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18221,14 +18286,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1389701801}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 1518028644}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
