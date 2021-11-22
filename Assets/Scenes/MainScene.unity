@@ -7244,6 +7244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13fe545fb3d9b114ca36f62fbef1fade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  receptionist: {fileID: 1908671882}
   zombie: {fileID: 225581105}
   ghost: {fileID: 241510717}
   skeleton: {fileID: 1533182835}
@@ -7254,6 +7255,8 @@ MonoBehaviour:
   scarecrow: {fileID: 981010942}
   slime: {fileID: 924720492}
   samara: {fileID: 927247051}
+  receptionistSprite: {fileID: 21300000, guid: 928367bb92a4b24439749825d0aefdce, type: 3}
+  receptionistAttackSprite: {fileID: 21300000, guid: 5d7629a2d8b251e429e9d9bceae4f3d8, type: 3}
   zombieSprite: {fileID: 21300000, guid: d771989fc0fc2b345be3905f2432e675, type: 3}
   zombieAttackSprite: {fileID: 21300000, guid: a08f26d040102de40bf9484771521cb9, type: 3}
   ghostSprite: {fileID: 21300000, guid: 95966586d0ac6ba4ea30a7d621497880, type: 3}
@@ -7272,7 +7275,7 @@ MonoBehaviour:
   scarecrowAttackSprite: {fileID: 21300000, guid: 20fb20e8c33ffed429e2498393ce8905, type: 3}
   slimeSprite: {fileID: 21300000, guid: ee206de4c6b6de348af98d0eaf99fb85, type: 3}
   slimeAttackSprite: {fileID: 21300000, guid: 6c4f3cd3af13ae749b02dc24e4ff975c, type: 3}
-  samaraSprite: {fileID: 21300000, guid: df2b8f6f8eda1634688bb2b20d35bee8, type: 3}
+  samaraSprite: {fileID: 21300000, guid: fb1b4fb95be692b4fa76ff0a22b02811, type: 3}
   samaraAttackSprite: {fileID: 21300000, guid: 7ee062e58153c85479875ee3ebdb1179, type: 3}
 --- !u!4 &890939535 stripped
 Transform:
@@ -7826,7 +7829,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7ee062e58153c85479875ee3ebdb1179, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb1b4fb95be692b4fa76ff0a22b02811, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
