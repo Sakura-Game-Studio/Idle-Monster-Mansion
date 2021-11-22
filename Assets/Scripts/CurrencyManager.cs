@@ -11,4 +11,20 @@ public class CurrencyManager : MonoBehaviour {
         currentMoney += roomSettings.GetIncomeRate();
         Debug.Log(currentMoney);
     }
+
+    public bool HasUpgradeCost(double costToUpgrade) {
+        if (currentMoney >= costToUpgrade) {
+            currentMoney -= costToUpgrade;
+            return true;
+        }
+        return false;
+    }
+
+    public bool HasUnlockCost(double unlockCost) {
+        if (currentMoney >= unlockCost) {
+            currentMoney -= unlockCost;
+            return true;
+        }
+        return false;
+    }
 }

@@ -25,7 +25,7 @@ public class GuestSpawner : MonoBehaviour {
         currentTime += Time.deltaTime;
         if (currentTime >= timeToSpawn) {
             currentTime = 0;
-            timeToSpawn = (int)Random.Range(5, 10);
+            timeToSpawn = (int)Random.Range(10, 15);
             if (!positionRoom.GetIntialPosition()) {
                 Instantiate(guest);
             }

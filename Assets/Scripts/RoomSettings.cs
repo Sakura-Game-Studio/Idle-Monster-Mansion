@@ -19,14 +19,20 @@ public class RoomSettings : MonoBehaviour {
     public float baseCompletionTime;
     public float completionTimeMultiplier;
     
-    public double currentIncomeCost;
+    public double currentCostUpgrade;
     public double currentIncomeRate;
     public float currentCompletionTime;
 
+    private GameObject gameController;
+    private CurrencyManager currencyManager;
+
     private void Start() {
         currentCompletionTime = baseCompletionTime;
-        currentIncomeCost = baseCost;
+        currentCostUpgrade = baseCost;
         currentIncomeRate = baseIncomeRate;
+        
+        gameController = GameObject.Find("Game Controller");
+        currencyManager = gameController.GetComponent<CurrencyManager>();
     }
 
     public float GetCompletionTime() {
@@ -34,7 +40,7 @@ public class RoomSettings : MonoBehaviour {
     }
     
     public void UpdateCompletionTime() {
-        currentCompletionTime = baseCompletionTime * (level /completionTimeMultiplier);
+        currentCompletionTime = baseCompletionTime - (level / completionTimeMultiplier);
     }
 
     public double GetIncomeRate() {
@@ -45,12 +51,12 @@ public class RoomSettings : MonoBehaviour {
         currentIncomeRate = baseIncomeRate * level;
     }
 
-    public double GetIncomeCost() {
-        return currentIncomeCost;
+    public double GetUpgradeCost() {
+        return currentCostUpgrade;
     }
     
-    public void UpdateIncomeCost() {
-        currentIncomeCost = baseCost * (Mathf.Pow(level, incomeCostMultiplier));
+    public void UpdateUpgradeCost() {
+        currentCostUpgrade = baseCost * (Mathf.Pow(incomeCostMultiplier, level));
     }
 
     public int getLevel() {
@@ -62,10 +68,29 @@ public class RoomSettings : MonoBehaviour {
     }
 
     public void UpgradeRoom() {
-        UpdateLevel();
-        UpdateIncomeCost();
-        UpdateIncomeRate();
-        UpdateCompletionTime();
+        if (currencyManager.HasUpgradeCost(currentCostUpgrade)) {
+            UpdateUpgradeCost();
+            UpdateLevel();
+            UpdateIncomeRate();
+            UpdateCompletionTime();
+        }
     }
 
+    public bool IsLocked() {
+        return locked;
+    }
+
+    public void Unlock() {
+        if (currencyManager.HasUnlockCost(costToUnlock)){
+            locked = false;
+        }
+    }
+    
+    public void ClickMouse() {
+        if (IsLocked()) {
+            Unlock();
+        }else {
+            UpgradeRoom();
+        }
+    }
 }

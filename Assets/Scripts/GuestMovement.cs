@@ -101,13 +101,18 @@ public class GuestMovement : MonoBehaviour {
                     guestResetRotation();
                 }
             }
-            else
-            {
-                if (!positionRoom.GetPositionState(currentRoom, currentRoomNumber, nextPosition))
-                {
+            else {
+                if (!positionRoom.GetPositionState(currentRoom, currentRoomNumber, nextPosition)) {
                     if (currentRoomNumber >= 2 && currentRoomNumber <= 11) {
-                        currentRoomStats = roomStatsArray.GetNextRoom(currentRoomNumber - 1);
+                        while (roomStatsArray.GetNextRoom(currentRoomNumber - 1).IsLocked() && currentRoomNumber <= 11) {
+                            currentRoomNumber++;
+                            if(currentRoomNumber == 12){
+                                break;
+                            }
+                        }
                     }
+                    if(currentRoomNumber < 12)
+                        currentRoomStats = roomStatsArray.GetNextRoom(currentRoomNumber - 1);
 
                     currentRoomNumber++;
                     positionRoom.SetEmpty(currentRoom, currentPosition);
@@ -120,9 +125,7 @@ public class GuestMovement : MonoBehaviour {
                     guestRotate();
 
                     positionRoom.SetBusy(currentRoom, currentPosition);
-                }
-                else
-                {
+                }else {
                     guestResetRotation();
                 }
             }

@@ -34,6 +34,8 @@ public class RoomsPositions : MonoBehaviour {
     public bool[] room10Busy;
     public bool[] exitBusy;
 
+    public RoomSettings room01Status, room02Status, room03Status, room04Status, room05Status, room06Status, room07Status, room08Status, room09Status, room10Status;
+
     public Transform[] SetupPosition() {
         return entrancePositions;
     }

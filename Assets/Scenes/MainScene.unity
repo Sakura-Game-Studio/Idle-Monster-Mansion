@@ -150,11 +150,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5631259}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -212,7 +212,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5631263}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 680829306}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5631263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1441,7 +1453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 22.489998
+      value: 22.54
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2410,11 +2422,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249387865}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2472,7 +2484,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 249387869}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1169271256}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &249387869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2486,7 +2510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3475,11 +3499,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357443053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3537,7 +3561,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 357443057}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2132179687}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &357443057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3551,7 +3587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3755,7 +3791,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 15
   completionTimeMultiplier: 13
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!1 &396484727
@@ -4146,7 +4182,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 10
   completionTimeMultiplier: 20
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!114 &466096531 stripped
@@ -4722,7 +4758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565921351}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6380593, y: -7.3742948, z: -3.0642533}
+  m_LocalPosition: {x: -1.75, y: -7.3742948, z: -3.0642533}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2017701275}
@@ -4739,7 +4775,7 @@ Transform:
   - {fileID: 239610439}
   - {fileID: 508314706}
   m_Father: {fileID: 1750231913}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &593718358
 GameObject:
@@ -4865,7 +4901,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 10
   completionTimeMultiplier: 20
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!4 &608727350 stripped
@@ -4950,7 +4986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 9.24
+      value: 9.290003
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5343,7 +5379,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 45
   completionTimeMultiplier: 4.5
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!1 &684565281
@@ -5990,7 +6026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.760001
+      value: -3.709998
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6517,11 +6553,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836599439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6579,7 +6615,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 836599443}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1596002614}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &836599443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6593,7 +6641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7108,6 +7156,16 @@ MonoBehaviour:
   room09Busy: 0000000000
   room10Busy: 0000000000
   exitBusy: 000000000000
+  room01Status: {fileID: 1389701801}
+  room02Status: {fileID: 460566818}
+  room03Status: {fileID: 394243740}
+  room04Status: {fileID: 1186523989}
+  room05Status: {fileID: 1596002614}
+  room06Status: {fileID: 1169271256}
+  room07Status: {fileID: 1695464140}
+  room08Status: {fileID: 1127916971}
+  room09Status: {fileID: 680829306}
+  room10Status: {fileID: 2132179687}
 --- !u!114 &890260426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7923,7 +7981,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f25808ded83a08344b90aa25120a638b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 653c4a222f854a64b897fe8aef7374ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8551,6 +8609,138 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81454ec8d1af2bb42a3d5217807a9870, type: 3}
+--- !u!1 &1031885231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031885232}
+  - component: {fileID: 1031885235}
+  - component: {fileID: 1031885234}
+  - component: {fileID: 1031885233}
+  m_Layer: 0
+  m_Name: Entrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1031885232
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031885231}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1408303710}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -19.6028, y: -4.4178}
+  m_SizeDelta: {x: 12.3463, y: 14.7111}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1031885233
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031885231}
+  m_CullTransparentMesh: 1
+--- !u!114 &1031885234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031885231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1031885235}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 597099022}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1031885235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031885231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1033566920
 GameObject:
   m_ObjectHideFlags: 0
@@ -8660,11 +8850,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033612792}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8722,7 +8912,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1033612796}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 460566818}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1033612796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8736,7 +8938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9302,7 +9504,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 40
   completionTimeMultiplier: 5
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!1 &1139865436
@@ -9332,11 +9534,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139865436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9394,7 +9596,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1139865440}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1695464140}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1139865440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9408,7 +9622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9652,7 +9866,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 30
   completionTimeMultiplier: 6
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!1 &1169284636
@@ -9682,11 +9896,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169284636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9744,7 +9958,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1169284640}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 394243740}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1169284640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9758,7 +9984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10043,7 +10269,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 20
   completionTimeMultiplier: 8
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!1 &1193321699
@@ -11031,7 +11257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -16.760002
+      value: -16.71
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -11186,7 +11412,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 5
   completionTimeMultiplier: 40
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!1 &1404036373
@@ -11378,6 +11604,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1031885232}
   - {fileID: 2118654119}
   - {fileID: 1033612793}
   - {fileID: 1169284637}
@@ -12542,7 +12769,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 25
   completionTimeMultiplier: 7
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!1 &1598718238
@@ -12837,7 +13064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 9.239999
+      value: 9.290002
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12964,7 +13191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 22.489998
+      value: 22.54
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13184,11 +13411,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694319937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13246,7 +13473,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1694319941}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1127916971}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1694319941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13260,7 +13499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13411,7 +13650,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 35
   completionTimeMultiplier: 5.5
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!1001 &1705286719
@@ -13834,7 +14073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 22.489998
+      value: 22.54
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14022,7 +14261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 9.239999
+      value: 9.290002
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14078,8 +14317,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2146742903}
   - {fileID: 565921352}
+  - {fileID: 2146742903}
   - {fileID: 290659858}
   - {fileID: 1944563208}
   - {fileID: 934938209}
@@ -14169,7 +14408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.7600012
+      value: -3.7099981
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14653,7 +14892,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5162115347ee7084a9cecb14971e3d41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20dfdbf7412c88b4a842cd6279896402, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14945,7 +15184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.7600012
+      value: -3.7099981
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -15688,7 +15927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908671880}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.008, y: -8.01, z: 4}
+  m_LocalPosition: {x: 5.008, y: -9.49, z: -2}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_Children: []
   m_Father: {fileID: 1728170854}
@@ -15734,7 +15973,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5162115347ee7084a9cecb14971e3d41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 928367bb92a4b24439749825d0aefdce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16344,11 +16583,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939212588}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16406,7 +16645,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1939212592}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1186523989}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1939212592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16420,7 +16671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16878,7 +17129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -16.760002
+      value: -16.71
       objectReference: {fileID: 0}
     - target: {fileID: 2570742230743234614, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -17901,7 +18152,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408303710}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17960,10 +18211,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
-        m_Mode: 5
+      - m_Target: {fileID: 1389701801}
+        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
+        m_MethodName: ClickMouse
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18054,7 +18305,7 @@ MonoBehaviour:
   incomeCostMultiplier: 1.1
   baseCompletionTime: 50
   completionTimeMultiplier: 4
-  currentIncomeCost: 0
+  currentCostUpgrade: 0
   currentIncomeRate: 0
   currentCompletionTime: 0
 --- !u!1 &2132584714
@@ -18265,5 +18516,5 @@ Transform:
   - {fileID: 2062552384}
   - {fileID: 1548781165}
   m_Father: {fileID: 1750231913}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
