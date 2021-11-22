@@ -80,7 +80,7 @@ SpriteRenderer:
   m_Size: {x: 40, y: 40}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &5748320504043077068
@@ -97,10 +97,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 5748320504043077065}
   sprites:
-  - {fileID: 21300000, guid: f548954dad91f9844b2befaaadf281fc, type: 3}
-  - {fileID: 21300000, guid: d9694ff5f23b22a41b11cf7b58c423b7, type: 3}
-  - {fileID: 21300000, guid: be3de3b1b4711f74fb8c98c938fbc09d, type: 3}
-  - {fileID: 21300000, guid: 56949e4cc977c2a409d90831d674497a, type: 3}
+  - {fileID: 21300000, guid: 249ec05dc64b3fa478373cd928ae9779, type: 3}
+  - {fileID: 21300000, guid: 853b7bed2db798147a554eef23a8c74b, type: 3}
+  - {fileID: 21300000, guid: 1ec92636477b4934aa6fe30fa7b37714, type: 3}
+  - {fileID: 21300000, guid: f892a1da3f2ee6a47b49433b6bd6eed3, type: 3}
+  spritesScare:
+  - {fileID: 21300000, guid: 8860254ce4a69364caa4238001a1ce50, type: 3}
+  - {fileID: 21300000, guid: 0308538427bc64944a454b61e3ccb916, type: 3}
+  - {fileID: 21300000, guid: 173ef9cc1ec07cb49aa34cee42f13888, type: 3}
+  - {fileID: 21300000, guid: ed0bffc13d272214d896a28c5bfc6d44, type: 3}
   spriteRender: {fileID: 5748320504043077070}
   angle: 15
   currencyManager: {fileID: 0}

@@ -29,6 +29,10 @@ public class GuestMovement : MonoBehaviour {
     private int currentRoomNumber = 1;
 
     public Sprite[] sprites;
+    public Sprite[] spritesScare;
+
+    private int spriteNumber;
+    
     public SpriteRenderer spriteRender;
 
     public int angle;
@@ -68,6 +72,7 @@ public class GuestMovement : MonoBehaviour {
             currentTimeToExecute += Time.deltaTime;
             if (currentTimeToExecute >= timerToExecute - 2) {
                 monsterControl.Scare(currentRoomNumber);
+                GuestScare();
             }
             guestResetRotation();
         }
@@ -81,6 +86,7 @@ public class GuestMovement : MonoBehaviour {
                 MoveToNextPosition();
             }
             monsterControl.ResetScare(currentRoomNumber);
+            GuestResetSprite();
             executing = false;
             currencyManager.EarnMoney(currentRoomStats);
         }
@@ -158,7 +164,42 @@ public class GuestMovement : MonoBehaviour {
 
     public void ChangeSprite() {
         int number = (int)Random.Range(1, 5);
+        spriteNumber = number;
         switch (number) {
+            case 1:
+                spriteRender.sprite = sprites[0];
+                break;
+            case 2:
+                spriteRender.sprite = sprites[1];
+                break;
+            case 3:
+                spriteRender.sprite = sprites[2];
+                break;
+            case 4:
+                spriteRender.sprite = sprites[3];
+                break;
+        }
+    }
+
+    public void GuestScare() {
+        switch (spriteNumber) {
+            case 1:
+                spriteRender.sprite = spritesScare[0];
+                break;
+            case 2:
+                spriteRender.sprite = spritesScare[1];
+                break;
+            case 3:
+                spriteRender.sprite = spritesScare[2];
+                break;
+            case 4:
+                spriteRender.sprite = spritesScare[3];
+                break;
+        }
+    }
+    
+    public void GuestResetSprite() {
+        switch (spriteNumber) {
             case 1:
                 spriteRender.sprite = sprites[0];
                 break;
