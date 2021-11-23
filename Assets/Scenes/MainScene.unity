@@ -218,14 +218,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680829306}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5631259}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -375,13 +375,13 @@ RectTransform:
   - {fileID: 1612549828}
   - {fileID: 800112651}
   - {fileID: 894438320}
-  m_Father: {fileID: 857152410}
+  m_Father: {fileID: 2106977515}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: -100, y: 900}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_SizeDelta: {x: 0, y: 800}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &33540737
 MonoBehaviour:
@@ -602,8 +602,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 382, y: 0}
-  m_SizeDelta: {x: 764.0541, y: 121.666664}
+  m_AnchoredPosition: {x: 455, y: 0}
+  m_SizeDelta: {x: 910, y: 137.5}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &56877210
 MonoBehaviour:
@@ -742,7 +742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &71455711
 RectTransform:
   m_ObjectHideFlags: 0
@@ -762,8 +762,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 382, y: -263.3333}
-  m_SizeDelta: {x: 764.0541, y: 121.666664}
+  m_AnchoredPosition: {x: 454.84088, y: -263.34375}
+  m_SizeDelta: {x: 909.68176, y: 121.666664}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &71455712
 MonoBehaviour:
@@ -957,7 +957,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
+  m_fontSize: 29.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 192040383}
   - component: {fileID: 192040382}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2782,14 +2782,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1169271256}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2801,7 +2801,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249387865}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2861,8 +2861,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 382, y: -131.66666}
-  m_SizeDelta: {x: 764.0541, y: 121.666664}
+  m_AnchoredPosition: {x: 455, y: -147.5}
+  m_SizeDelta: {x: 910, y: 137.5}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &252937625
 MonoBehaviour:
@@ -2884,7 +2884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7c9481df8e54aa548bfb24825e04bceb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00830a62ff238d846aef911fec1c7067, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3672,14 +3672,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2132179687}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3691,7 +3691,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357443053}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -3962,7 +3962,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 460566818}
-  lockedImage: {fileID: 1169284640}
+  lockedImage: {fileID: 0}
 --- !u!1 &396484727
 GameObject:
   m_ObjectHideFlags: 0
@@ -4023,7 +4023,7 @@ MonoBehaviour:
   m_text: Monster Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4047,7 +4047,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.6
+  m_fontSize: 62.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4370,7 +4370,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 1389701801}
-  lockedImage: {fileID: 1033612796}
+  lockedImage: {fileID: 0}
 --- !u!114 &466096531 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7005059456050505325, guid: 97dbd071d9251094f934f4f7f6bccd5b, type: 3}
@@ -5190,7 +5190,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 597099022}
-  lockedImage: {fileID: 1031885235}
+  lockedImage: {fileID: 0}
 --- !u!1001 &602677929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5785,8 +5785,8 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 1127916971}
-  lockedImage: {fileID: 5631263}
---- !u!1 &684565281
+  lockedImage: {fileID: 0}
+--- !u!1 &682456614
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5794,72 +5794,131 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 684565282}
-  - component: {fileID: 684565284}
-  - component: {fileID: 684565283}
+  - component: {fileID: 682456615}
+  - component: {fileID: 682456617}
+  - component: {fileID: 682456616}
   m_Layer: 5
-  m_Name: Base Image
+  m_Name: Current Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &684565282
+  m_IsActive: 1
+--- !u!224 &682456615
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684565281}
+  m_GameObject: {fileID: 682456614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 857152410}
-  m_RootOrder: 1
+  m_Father: {fileID: 2147205184}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &684565283
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &682456616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684565281}
+  m_GameObject: {fileID: 682456614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.21960784}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: afdc3d1efac6a564694a24a327b14eaf, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &684565284
+  m_text: 0g
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 90
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 90
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 15, y: 0, z: 15, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &682456617
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684565281}
+  m_GameObject: {fileID: 682456614}
   m_CullTransparentMesh: 1
 --- !u!114 &687019700 stripped
 MonoBehaviour:
@@ -7063,14 +7122,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1596002614}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7082,7 +7141,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836599439}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7256,8 +7315,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 33540736}
-  - {fileID: 684565282}
+  - {fileID: 2106977515}
+  - {fileID: 1431732059}
   m_Father: {fileID: 1193321703}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7769,6 +7828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentMoney: 0
+  _currentMoneyText: {fileID: 682456616}
 --- !u!114 &890260428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7804,7 +7864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13fe545fb3d9b114ca36f62fbef1fade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receptionist: {fileID: 0}
+  receptionist: {fileID: 1908671882}
   zombie: {fileID: 225581105}
   ghost: {fileID: 241510717}
   skeleton: {fileID: 1533182835}
@@ -7815,10 +7875,10 @@ MonoBehaviour:
   scarecrow: {fileID: 981010942}
   slime: {fileID: 924720492}
   samara: {fileID: 927247051}
-  receptionistSprite: {fileID: 0}
-  receptionistAttackSprite: {fileID: 0}
+  receptionistSprite: {fileID: 21300000, guid: 5d7629a2d8b251e429e9d9bceae4f3d8, type: 3}
+  receptionistAttackSprite: {fileID: 21300000, guid: 928367bb92a4b24439749825d0aefdce, type: 3}
   zombieSprite: {fileID: 21300000, guid: d771989fc0fc2b345be3905f2432e675, type: 3}
-  zombieAttackSprite: {fileID: 21300000, guid: 98b83f805f67a34428f84e59b161770e, type: 3}
+  zombieAttackSprite: {fileID: 21300000, guid: a08f26d040102de40bf9484771521cb9, type: 3}
   ghostSprite: {fileID: 21300000, guid: 95966586d0ac6ba4ea30a7d621497880, type: 3}
   ghostAttackSprite: {fileID: 21300000, guid: bb8b4ae8744ab4a43833e422f4d73b81, type: 3}
   skeletonSprite: {fileID: 21300000, guid: 18a47058cc5e9e44f8a81a9b8692195e, type: 3}
@@ -9420,10 +9480,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 597099022}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9634,14 +9694,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 460566818}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9653,7 +9713,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033612792}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -10261,7 +10321,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 1695464140}
-  lockedImage: {fileID: 1694319941}
+  lockedImage: {fileID: 0}
 --- !u!4 &1138145507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aabe4be4e6afca5439e8167ccc88f499, type: 3}
@@ -10357,14 +10417,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1695464140}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10376,7 +10436,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139865436}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -10677,7 +10737,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 1596002614}
-  lockedImage: {fileID: 249387869}
+  lockedImage: {fileID: 0}
 --- !u!1 &1169284636
 GameObject:
   m_ObjectHideFlags: 0
@@ -10768,14 +10828,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 394243740}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10787,7 +10847,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169284636}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -10891,7 +10951,7 @@ GameObject:
   - component: {fileID: 1176735299}
   - component: {fileID: 1176735298}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11151,7 +11211,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 394243740}
-  lockedImage: {fileID: 1939212592}
+  lockedImage: {fileID: 0}
 --- !u!4 &1189097001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f8c64d15bae84cc419ee0f7ab68a7328, type: 3}
@@ -11604,7 +11664,7 @@ GameObject:
   - component: {fileID: 1241613643}
   - component: {fileID: 1241613642}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11652,7 +11712,7 @@ MonoBehaviour:
   m_text: Time
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12501,7 +12561,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 597099022}
-  lockedImage: {fileID: 2118654122}
+  lockedImage: {fileID: 0}
 --- !u!1001 &1401908336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12771,6 +12831,82 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1431732058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1431732059}
+  - component: {fileID: 1431732061}
+  - component: {fileID: 1431732060}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1431732059
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431732058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2147205184}
+  m_Father: {fileID: 857152410}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 500, y: 130}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1431732060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431732058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.20784315, g: 0.4666667, b: 0.6509804, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ccbb5547fe68e244abe4d6d9d112b091, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1431732061
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431732058}
+  m_CullTransparentMesh: 1
 --- !u!4 &1435822913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 407f4b4c9e2cd574f86ce706f03f170a, type: 3}
@@ -13267,7 +13403,7 @@ GameObject:
   - component: {fileID: 1495152348}
   - component: {fileID: 1495152347}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Current
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13904,7 +14040,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 1186523989}
-  lockedImage: {fileID: 836599443}
+  lockedImage: {fileID: 0}
 --- !u!1 &1598718238
 GameObject:
   m_ObjectHideFlags: 0
@@ -14714,14 +14850,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1127916971}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -14733,7 +14869,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694319937}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -14894,7 +15030,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 1169271256}
-  lockedImage: {fileID: 1139865440}
+  lockedImage: {fileID: 0}
 --- !u!1 &1697038055
 GameObject:
   m_ObjectHideFlags: 0
@@ -17029,7 +17165,7 @@ GameObject:
   - component: {fileID: 1879180945}
   - component: {fileID: 1879180944}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Current
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17163,7 +17299,7 @@ GameObject:
   - component: {fileID: 1893950450}
   - component: {fileID: 1893950449}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Income
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17211,7 +17347,7 @@ MonoBehaviour:
   m_text: Income
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18104,14 +18240,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1186523989}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18123,7 +18259,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939212588}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -19687,6 +19823,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2106977513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106977515}
+  - component: {fileID: 2106977514}
+  m_Layer: 5
+  m_Name: Room Upgrade Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2106977514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106977513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7367641657a2638429455bcd91a5fbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _upgradePanel: {fileID: 33540735}
+  _closeButton: {fileID: 894438321}
+  _monsterName: {fileID: 396484729}
+  _description: {fileID: 83941253}
+  _monsterIcon: {fileID: 267251730}
+  _currentIncome: {fileID: 1495152347}
+  _currentTime: {fileID: 1879180944}
+  _currentCapacity: {fileID: 1016628542}
+  _upgradeIncome: {fileID: 192040382}
+  _upgradeTime: {fileID: 1176735298}
+  _upgradeCapacity: {fileID: 229936135}
+  _upgradeButton: {fileID: 852031882}
+  _upgradeButtonText: {fileID: 84244826}
+  _upgradeCostText: {fileID: 233538104}
+  _upgradeAvailableColor: {r: 0.04705883, g: 0.6745098, b: 0.04705883, a: 1}
+  _notAvailableColor: {r: 0.82745105, g: 0, b: 0, a: 1}
+--- !u!224 &2106977515
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106977513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 33540736}
+  m_Father: {fileID: 857152410}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 450}
+  m_SizeDelta: {x: -100, y: 800}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &2114012779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 407f4b4c9e2cd574f86ce706f03f170a, type: 3}
@@ -19782,14 +19983,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1389701801}
-        m_TargetAssemblyTypeName: RoomSettings, Assembly-CSharp
-        m_MethodName: ClickMouse
-        m_Mode: 1
+      - m_Target: {fileID: 2106977514}
+        m_TargetAssemblyTypeName: MonsterRoomUpgradeScreen, Assembly-CSharp
+        m_MethodName: TogglePanel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -19880,7 +20081,7 @@ MonoBehaviour:
   currentIncomeRate: 0
   currentCompletionTime: 0
   previousRoom: {fileID: 680829306}
-  lockedImage: {fileID: 357443057}
+  lockedImage: {fileID: 0}
 --- !u!1 &2132584714
 GameObject:
   m_ObjectHideFlags: 0
@@ -20007,3 +20208,79 @@ Transform:
   m_Father: {fileID: 1750231913}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2147205183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2147205184}
+  - component: {fileID: 2147205186}
+  - component: {fileID: 2147205185}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2147205184
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147205183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 682456615}
+  m_Father: {fileID: 1431732059}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 5}
+  m_SizeDelta: {x: 0, y: -10}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2147205185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147205183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.38823533, g: 0.6666667, b: 0.854902, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ccbb5547fe68e244abe4d6d9d112b091, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2147205186
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147205183}
+  m_CullTransparentMesh: 1
