@@ -128,7 +128,6 @@ public class RoomSettings : MonoBehaviour {
         }
     }
 
-<<<<<<< HEAD
     public void UnlockSave() {
         locked = false;
         var tempColor = lockedImage.color;
@@ -136,13 +135,6 @@ public class RoomSettings : MonoBehaviour {
         lockedImage.color = tempColor;
     }
 
-    public void ClickMouse() {
-        if (IsLocked()) {
-            Unlock();
-        }else {
-            UpgradeRoom();
-        }
-=======
     public bool CanUpgrade()
     {
         if (CurrencyManager.Instance.HasUpgradeCost(currentCostUpgrade) && level < 100)
@@ -155,6 +147,5 @@ public class RoomSettings : MonoBehaviour {
         if (CurrencyManager.Instance.HasUnlockCost(costToUnlock) && !previousRoom.IsLocked())
             return true;
         return false;
->>>>>>> UI
     }
 }
